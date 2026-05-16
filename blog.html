@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog | Akash Shakya Digital Services — LinkedIn Tips, AI Tools & Android Development</title>
+  <meta name="description" content="Blog by Akash Shakya Digital Services — guides on using ScriptBala LinkedIn post generator, Jeb AI offline Android app, and building digital products from small-town India."/>
+  <meta name="keywords" content="ScriptBala guide, LinkedIn post kaise likhen, Jeb AI offline AI app, free LinkedIn post generator India, Android development Mainpuri"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://www.akashshakyadigital.online/blog.html"/>
+  <meta property="og:title" content="Blog | Akash Shakya Digital Services"/>
+  <meta property="og:description" content="Tips on ScriptBala, Jeb AI, LinkedIn growth, and app development from a Mainpuri-based MSME founder."/>
+  <meta property="og:url" content="https://www.akashshakyadigital.online/blog.html"/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0a1628; --blue: #1a3a6b; --gold: #c8922a; --gold-light: #e8b84b;
+      --cream: #f5f0e8; --white: #ffffff; --text: #2c2c2c; --muted: #6b7280;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text); overflow-x: hidden; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(10,22,40,0.97); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: space-between; padding: 0 5%; height: 64px; border-bottom: 1px solid rgba(200,146,42,0.3); }
+    .nav-brand { font-family: 'Playfair Display', serif; color: var(--gold-light); font-size: 1.1rem; letter-spacing: 0.05em; text-decoration: none; }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    .blog-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%); padding: 120px 5% 60px; }
+    .blog-hero .tag { font-size: 0.78rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.8rem; }
+    .blog-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--white); line-height: 1.2; margin-bottom: 1rem; }
+    .blog-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.65); max-width: 560px; line-height: 1.7; }
+
+    .blog-toc { background: var(--white); padding: 2rem 5%; border-bottom: 1px solid #e5e0d8; display: flex; gap: 2rem; flex-wrap: wrap; align-items: center; }
+    .blog-toc span { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+    .blog-toc a { font-size: 0.88rem; color: var(--navy); text-decoration: none; border-bottom: 1px solid #d4cfc7; padding-bottom: 1px; transition: color 0.2s, border-color 0.2s; }
+    .blog-toc a:hover { color: var(--gold); border-color: var(--gold); }
+
+    .blog-container { max-width: 820px; margin: 0 auto; padding: 70px 5%; }
+
+    article { margin-bottom: 80px; padding-bottom: 80px; border-bottom: 1px solid #e0d9cf; }
+    article:last-child { border-bottom: none; }
+
+    .article-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .article-cat { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--gold); background: rgba(200,146,42,0.1); padding: 4px 12px; border-radius: 100px; }
+    .article-date { font-size: 0.8rem; color: var(--muted); }
+    .article-read { font-size: 0.8rem; color: var(--muted); }
+
+    article h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.1rem); color: var(--navy); line-height: 1.3; margin-bottom: 1.2rem; }
+    article .intro { font-size: 1.05rem; color: #444; line-height: 1.8; margin-bottom: 1.8rem; font-weight: 400; border-left: 3px solid var(--gold); padding-left: 1.2rem; background: rgba(200,146,42,0.04); padding: 1rem 1.2rem; border-radius: 0 6px 6px 0; }
+
+    .article-body { font-size: 0.96rem; color: #3a3a3a; line-height: 1.9; }
+    .article-body p { margin-bottom: 1.2rem; }
+    .article-body h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--navy); margin: 2rem 0 0.8rem; }
+    .article-body h4 { font-size: 1rem; font-weight: 700; color: var(--navy); margin: 1.4rem 0 0.5rem; }
+    .article-body a { color: var(--gold); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(200,146,42,0.35); transition: border-color 0.2s; }
+    .article-body a:hover { border-color: var(--gold); }
+    .article-body strong { color: var(--navy); font-weight: 700; }
+    .article-body ul, .article-body ol { padding-left: 1.4rem; margin-bottom: 1.2rem; }
+    .article-body li { margin-bottom: 0.5rem; }
+
+    .highlight-box { background: rgba(200,146,42,0.08); border: 1px solid rgba(200,146,42,0.25); border-radius: 8px; padding: 1.2rem 1.5rem; margin: 1.5rem 0; }
+    .highlight-box p { margin: 0; font-size: 0.93rem; color: #3d3d3d; }
+    .highlight-box strong { color: var(--navy); }
+
+    .cta-inline { display: inline-block; background: var(--navy); color: var(--white); padding: 10px 22px; border-radius: 5px; font-size: 0.88rem; font-weight: 600; text-decoration: none; margin-top: 0.5rem; transition: background 0.2s; }
+    .cta-inline:hover { background: var(--blue); }
+    .cta-inline.gold { background: var(--gold); color: var(--navy); }
+    .cta-inline.gold:hover { background: var(--gold-light); }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.88rem; }
+    .comparison-table th { background: var(--navy); color: var(--white); padding: 10px 14px; text-align: left; font-weight: 600; }
+    .comparison-table td { padding: 10px 14px; border-bottom: 1px solid #e5e0d8; }
+    .comparison-table tr:nth-child(even) td { background: rgba(200,146,42,0.04); }
+    .comparison-table .yes { color: #16a34a; font-weight: 700; }
+    .comparison-table .no { color: #dc2626; }
+
+    footer { background: #060e1a; color: rgba(255,255,255,0.5); padding: 2.5rem 5%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; font-size: 0.82rem; }
+    footer .footer-brand { font-family: 'Playfair Display', serif; color: var(--gold-light); font-size: 1rem; }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a:hover { color: var(--gold-light); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .blog-toc { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Akash Shakya Digital Services</a>
+  <div class="nav-links">
+    <a href="index.html#services">Services</a>
+    <a href="index.html#portfolio">Products</a>
+    <a href="blog.html">Blog</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<div class="blog-hero">
+  <div class="tag">📝 Our Blog</div>
+  <h1>Insights on AI, Android<br>& Building for India</h1>
+  <p>Guides, tips, and stories from the team behind Jeb AI and ScriptBala — built in Mainpuri, UP.</p>
+</div>
+
+<div class="blog-toc">
+  <span>Jump to:</span>
+  <a href="#linkedin-guide">LinkedIn Post Guide</a>
+  <a href="#jeb-ai-guide">Jeb AI Explained</a>
+  <a href="#founder-story">Founder Story</a>
+</div>
+
+<div class="blog-container">
+
+  <!-- ARTICLE 1: ScriptBala LinkedIn Guide -->
+  <article id="linkedin-guide">
+    <div class="article-meta">
+      <span class="article-cat">✍️ LinkedIn Growth</span>
+      <span class="article-date">May 2026</span>
+      <span class="article-read">· 6 min read</span>
+    </div>
+    <h2>LinkedIn Par Free Mein Authentic Posts Kaise Likhein — Job Seekers aur Founders ke Liye Complete Guide</h2>
+    <p class="intro">
+      Agar aap LinkedIn par active hona chahte hain lekin har baar blank page dekhkar himmat harti hai, to aap akele nahi hain. ScriptBala isi problem ka solution hai — ek free AI LinkedIn post generator jo Indians ke liye banaya gaya hai, Indian context samjhke, ₹ mein affordable pricing ke saath.
+    </p>
+    <div class="article-body">
+
+      <p>LinkedIn 2026 mein sirf job dhundhne ki jagah nahi rahi. Ye personal branding, thought leadership, aur business growth ka sabse powerful platform ban gaya hai India mein. Lekin problem ye hai — <strong>zyaadatar log jaante hain ki LinkedIn important hai, par likhte nahi</strong> — writer's block, time nahi, ya fee wala tools afford nahi hote.</p>
+
+      <h3>ScriptBala Kya Hai Aur Ye Kyun Kaam Karta Hai?</h3>
+      <p><a href="https://www.scriptbala.com" target="_blank" rel="noopener">ScriptBala</a> ek free AI LinkedIn post generator hai jo specifically Indian professionals ke liye banaya gaya hai. Ye Taplio aur Magic Post jaisa kaam karta hai — lekin <strong>bilkul free plan ke saath</strong>, Indian pricing (₹99/month se), aur aise content ke saath jo genuinely Indian audience ko resonate kare.</p>
+
+      <div class="highlight-box">
+        <p><strong>Real numbers:</strong> ScriptBala par abhi 10,000+ Indian professionals active hain aur 50,000+ posts generate ho chuke hain. 2 posts daily free mein milte hain — forever, bina credit card ke.</p>
+      </div>
+
+      <h3>8 Post Styles — Kaunsa Kab Use Karein?</h3>
+      <p>ScriptBala mein 8 carefully designed post styles hain, har ek alag situation ke liye:</p>
+      <ul>
+        <li><strong>😔 Rejection Story</strong> — Job rejection ke baad authentic post. LinkedIn par sabse zyaada engage karne wala content type. "Applied to 50 companies, rejected by 48" type posts viral hote hain.</li>
+        <li><strong>📚 Learning Journey</strong> — Course complete ki, new skill seekhi — document karo growth mindset.</li>
+        <li><strong>💼 Interview Experience</strong> — Interview ke baad insights share karo — ye content save aur share hota hai.</li>
+        <li><strong>🎉 Career Milestone</strong> — Job offer, promotion, certification celebrate karo — par genuinely.</li>
+        <li><strong>💡 Industry Insight</strong> — Apne field ka koi observation share karo — ye aapko thought leader banata hai.</li>
+        <li><strong>🎯 Career Advice</strong> — Practical tips dena — highly shareable content.</li>
+        <li><strong>💪 Job Hunt Reality</strong> — Mental health, motivation — builds community.</li>
+        <li><strong>❤️ Gratitude Post</strong> — Mentors aur supporters ko thank karo genuinely.</li>
+      </ul>
+
+      <h3>Step-by-Step: ScriptBala Se Post Kaise Banayein</h3>
+      <ol>
+        <li><strong>Google se login karein</strong> — ek click mein, koi form nahi.</li>
+        <li><strong>Style choose karein</strong> — apni situation ke hisaab se upar se koi ek.</li>
+        <li><strong>Apna idea likhein</strong> — simple words mein, 20+ characters — jaise "Got rejected from TCS today but learned XYZ."</li>
+        <li><strong>Length choose karein</strong> — Quick (80-120 words), Engaging (150-200 words, best), ya Deep (250-350 words).</li>
+        <li><strong>Generate karein</strong> — 5-10 seconds mein polished post ready.</li>
+        <li><strong>Copy-paste karein LinkedIn par</strong> — bas!</li>
+      </ol>
+
+      <h3>ScriptBala vs Taplio vs Magic Post</h3>
+      <table class="comparison-table">
+        <tr><th>Feature</th><th>ScriptBala</th><th>Taplio / Magic Post</th></tr>
+        <tr><td>Free Plan</td><td class="yes">✅ 2 posts/day forever</td><td class="no">❌ Trial only</td></tr>
+        <tr><td>Indian Pricing</td><td class="yes">✅ ₹99/month</td><td class="no">❌ $20-30/month</td></tr>
+        <tr><td>Job Seeker Styles</td><td class="yes">✅ 8 styles</td><td class="no">❌ Generic only</td></tr>
+        <tr><td>Hindi Support</td><td class="yes">✅ Coming soon</td><td class="no">❌</td></tr>
+        <tr><td>No Lock-in</td><td class="yes">✅</td><td class="no">❌ Annual plans</td></tr>
+      </table>
+
+      <h3>Pro Tips: Posts Ko Actually Viral Kaise Banayein</h3>
+      <ul>
+        <li><strong>Hook first 2 lines mein:</strong> LinkedIn "see more" se pehle sirf 2 lines dikhta hai. "Got rejected?" ya "3 months ago I was unemployed." — aisa hook jo ruka de.</li>
+        <li><strong>Short paragraphs:</strong> 1-2 sentences max per paragraph. Mobile readers ke liye zaroori.</li>
+        <li><strong>No hashtags:</strong> ScriptBala intentionally hashtags nahi deta — LinkedIn ne inhe devalue kar diya hai.</li>
+        <li><strong>Engage within 1 hour:</strong> Post ke baad 60 minutes active raho, comments ka jawab dena algorithm ko boost karta hai.</li>
+        <li><strong>Consistency:</strong> Week mein 3-4 posts. Ek post per month se growth nahi hogi.</li>
+      </ul>
+
+      <p>
+        <a href="https://www.scriptbala.com" target="_blank" rel="noopener" class="cta-inline gold">Try ScriptBala Free — No Card Needed →</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ARTICLE 2: Jeb AI Guide -->
+  <article id="jeb-ai-guide">
+    <div class="article-meta">
+      <span class="article-cat">🤖 Android AI</span>
+      <span class="article-date">April 2026</span>
+      <span class="article-read">· 5 min read</span>
+    </div>
+    <h2>Offline AI Kya Hota Hai? Jeb AI Aapke Android Phone Par Privacy-First AI Kaise Chalaata Hai</h2>
+    <p class="intro">
+      ChatGPT aur Gemini bahut achhe hain — lekin ye sab aapka data cloud par bhejte hain. Jeb AI ek alag approach leta hai: poori AI processing seedha aapke phone par, bina internet ke, bina koi data bahar bheje. Samjhein kaise.
+    </p>
+    <div class="article-body">
+
+      <h3>Cloud AI vs On-Device AI — Kya Fark Hai?</h3>
+      <p>Jab aap ChatGPT ya Gemini use karte hain, aapka message pehle internet ke zariye unke servers par jaata hai, wahan process hota hai, aur phir jawab aapke paas aata hai. Matlab <strong>aapki har conversation unke servers par stored hoti hai</strong>.</p>
+      <p>On-device AI — jaise Jeb AI — mein AI model completely aapke phone ki RAM aur processor par run hota hai. <strong>Koi data phone se bahar nahi jaata.</strong> Airplane mode mein bhi kaam karta hai.</p>
+
+      <div class="highlight-box">
+        <p><strong>Jeb AI kya karta hai:</strong> Multiple open-source LLMs aapke Android phone par run karta hai. Aap model choose kar sakte ho, temperature set kar sakte ho, system prompts customize kar sakte ho — poora control aapka.</p>
+      </div>
+
+      <h3>Jeb AI Ke Key Features</h3>
+      <ul>
+        <li><strong>100% Offline:</strong> Metro mein, remote area mein, airplane mein — AI hamesha available.</li>
+        <li><strong>Zero Data Leakage:</strong> No cloud, no telemetry, no tracking. Aapki conversations sirf aapke phone mein.</li>
+        <li><strong>Multiple Models Support:</strong> Download karo aur locally run karo open-source LLMs.</li>
+        <li><strong>Full Control:</strong> Temperature, context length, system prompts — sab aap set karo.</li>
+        <li><strong>Built-in Benchmarking:</strong> Dekho kitna fast model aapke phone par run ho raha hai.</li>
+        <li><strong>No Content Restrictions:</strong> App ki taraf se koi strict policy nahi — aapke rules, aapka control.</li>
+      </ul>
+
+      <h3>Konsa Phone Chahiye Jeb AI Ke Liye?</h3>
+      <ul>
+        <li>Minimum <strong>6GB RAM</strong> chhote models ke liye</li>
+        <li><strong>8GB+ RAM</strong> better models ke liye</li>
+        <li>Recent flagship ya mid-range phone (last 2-3 years)</li>
+        <li>Android 7.0 aur upar</li>
+      </ul>
+      <p>Purane ya budget phones pe struggle ho sakta hai — ye real on-device inference hai, cloud wrapper nahi.</p>
+
+      <h3>Kaun Use Kare Jeb AI?</h3>
+      <ul>
+        <li>Jo log cloud ko apni personal conversations trust nahi karte</li>
+        <li>Developers jo local models experiment karna chahte hain</li>
+        <li>Privacy-conscious users</li>
+        <li>Log jahan internet unreliable hota hai — rural areas, travel ke dauran</li>
+      </ul>
+
+      <p>
+        <a href="https://play.google.com/store/apps/details?id=com.jeb.ai" target="_blank" rel="noopener" class="cta-inline">Download Jeb AI on Play Store →</a>
+      </p>
+    </div>
+  </article>
+
+  <!-- ARTICLE 3: Founder Story -->
+  <article id="founder-story">
+    <div class="article-meta">
+      <span class="article-cat">🚀 Founder Story</span>
+      <span class="article-date">March 2026</span>
+      <span class="article-read">· 7 min read</span>
+    </div>
+    <h2>Mainpuri Se SaaS: Ek MSME Founder Ki Real Product Launch Story — Jeb AI aur ScriptBala Kaise Bane</h2>
+    <p class="intro">
+      Metro cities se AI startups ki kahaniyan bahut sunne ko milti hain. Ye story ek chhote shehar se hai — Mainpuri, Uttar Pradesh — jahan se ek MSME-registered enterprise ne 2 real products banaye, Google Play par launch kiye, aur India ke thousands of professionals tak pahunche.
+    </p>
+    <div class="article-body">
+
+      <h3>Shuruaat: Problem Se Product Tak</h3>
+      <p>Har product ek problem se shuru hota hai. <strong>Jeb AI</strong> ek personal frustration se aayi — privacy. Cloud AI tools bahut achhe hain, lekin har conversation unke servers par jati hai. Idea aaya: kya hoga agar AI bilkul aapke phone par, offline, bina kisi ko bataye kaam kare?</p>
+      <p><strong>ScriptBala</strong> ek alag observation se aayi. LinkedIn India mein bahut fast grow kar raha hai — especially job seekers aur freshers ke liye. Lekin Taplio jaisi tools $20-30 per month charge karti hain. India ke ek fresh graduate ke liye ye affordable nahi. Free alternative kahan hai? Tha nahi. To banaya.</p>
+
+      <h3>MSME Registration Kyun Zaroori Tha</h3>
+      <p>January 2026 mein Akash Shakya Digital Services ko officially Udyam portal par MSME ke roop mein register kiya gaya. Ye sirf paperwork nahi tha — <strong>ye ek commitment tha ki products seriously liye ja rahe hain</strong>. MSME certification ke saath:</p>
+      <ul>
+        <li>Government schemes ka access milta hai</li>
+        <li>Business credibility badhti hai</li>
+        <li>Banking aur payment gateways set karna aasan hota hai</li>
+        <li>Play Store developer account ke liye legitimate business proof milta hai</li>
+      </ul>
+
+      <h3>Google Play Par Launch — Real Challenges</h3>
+      <p>Jeb AI ko Play Store par publish karna straightforward nahi tha. On-device LLM apps ke liye special permissions chahiye hote hain. Privacy policy ek proper legal document honi chahiye, sirf formality nahi. Content rating carefully fill karni padti hai.</p>
+
+      <div class="highlight-box">
+        <p><strong>Lesson:</strong> Play Store rejection baar baar aata hai. Iska matlab ye nahi ki product kharab hai — usually koi permission ya policy detail miss hui hoti hai. Patience rakho, review carefully karo, resubmit karo.</p>
+      </div>
+
+      <h3>ScriptBala Ka Growth — Organic Se 10,000 Users Tak</h3>
+      <p>ScriptBala ke 10,000 users paid ads se nahi aaye. Growth mostly organic tha:</p>
+      <ul>
+        <li>SEO — LinkedIn post generator related keywords par ranking</li>
+        <li>Product hunt aur indie maker communities</li>
+        <li>Users khud LinkedIn par share karte the apne generated posts</li>
+        <li>Word of mouth — especially job seekers communities mein</li>
+      </ul>
+
+      <h3>Small Town Se Global Product — Kya Seekha?</h3>
+      <p>Mainpuri se product banana matlab ye nahi ki aap kuch chhota banao. Internet ne geography ko irrelevant bana diya hai. <strong>Jeb AI aur ScriptBala dono globally accessible hain</strong> — koi bhi, kahin se bhi use kar sakta hai.</p>
+      <p>Agar aap bhi koi digital product banana chahte hain, ya apne business ke liye app ya website chahiye, to hum help kar sakte hain. Ye sirf ek agency ki baat nahi — ye wahi log hain jo khud products banate hain aur jaante hain real challenges kya hote hain.</p>
+
+      <p>
+        <a href="index.html#contact" class="cta-inline">Work With Us →</a>
+        &nbsp;&nbsp;
+        <a href="https://www.scriptbala.com" target="_blank" rel="noopener" class="cta-inline gold">Try ScriptBala Free →</a>
+      </p>
+    </div>
+  </article>
+
+</div>
+
+<footer>
+  <div>
+    <div class="footer-brand">Akash Shakya Digital Services</div>
+    <div style="margin-top:4px;">Mainpuri, UP · MSME Registered · Est. 2026</div>
+  </div>
+  <div style="text-align:right;">
+    <div>© 2026 Akash Shakya Digital Services. All rights reserved.</div>
+    <div style="margin-top:6px;display:flex;gap:1.2rem;justify-content:flex-end;flex-wrap:wrap;">
+      <a href="index.html">Home</a>
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="https://www.scriptbala.com" target="_blank" rel="noopener">ScriptBala</a>
+      <a href="https://play.google.com/store/apps/details?id=com.jeb.ai" target="_blank" rel="noopener">Jeb AI</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
